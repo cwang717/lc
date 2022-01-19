@@ -23,8 +23,9 @@ public:
                 for (int i = 0; i < loopSize; ++i) {
                     head = head->next;
                 }
-                while ((result++) != (head++)) {
-                    
+                while (result != head) {
+                    result = result->next;
+                    head = head->next;
                 }
                 return result;
             }
